@@ -1,0 +1,34 @@
+{
+    "name": "ez/observer",
+    "type": "library",
+    "description": "Ez Observer",
+    "keywords": ["observer", "future"],
+    "homepage": "https://bitbucket.org/dereksangshi2000/ez-observer",
+    "license": "MIT",
+    "authors": [
+        {"name": "Derek Li", "email": "dereksangshi2000@gmail.com.au"}
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/console": "~2.0",
+        "ext-weakref": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://satis.internal.balancenet.com.au"
+        }
+    ],
+    "suggest": {
+        "symfony/console": "For helpful console commands to test."
+    },
+    "autoload": {
+        "psr-0": { "Ez\\Observer\\": "src/" }
+    },
+    "archive": {
+        "exclude": ["!vendor", "tests", "*phpunit.xml", ".travis.yml", "build.xml", "build.properties", "composer.phar"]
+    }
+}
